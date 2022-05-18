@@ -17,12 +17,6 @@ class Memoized<V> {
 
   void expire() => _expired = true;
 
-  @Deprecated('update() has been deprecated, use expire()')
-  void update() => _memoized = _computation();
-
-  @Deprecated('requestUpdate() has been deprecated, use expire()')
-  void requestUpdate() => _expired = true;
-
   @override
   String toString() => toStringPretty(this, {
         'functionType': '$V Function()',
