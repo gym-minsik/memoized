@@ -1,3 +1,7 @@
+## 1.5.0
+  - Breaking: remove the deprecated methods `Memoized.update` and `Memoized.requestUpdate`.
+
+
 ## 1.4.7
   - Replace LRUCache with quiver.collection.LruMap
 

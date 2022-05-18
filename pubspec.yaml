@@ -1,7 +1,7 @@
 name: memoized
 description: Decorators to cache returned values, it helps in reducing the execution time of the function by using LRU Caching.
-version: 1.4.7
-repository: https://github.com/sylfree/memoized
+version: 1.5.0
+repository: https://github.com/sylfreee/memoized
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
