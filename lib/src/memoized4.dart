@@ -16,7 +16,8 @@ class Memoized4<V, A1, A2, A3, A4> {
     return cachedValue ?? (_cache[tuple] = _body(a1, a2, a3, a4));
   }
 
-  void expire(A1 a1, A2 a2, A3 a3, A4 a4) => _cache.remove(Tuple4(a1, a2, a3, a4));
+  void expire(A1 a1, A2 a2, A3 a3, A4 a4) =>
+      _cache.remove(Tuple4(a1, a2, a3, a4));
 
   void expireAll() => _cache.clear();
 }
