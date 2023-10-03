@@ -1,3 +1,7 @@
+## 2.2.0
+  - Add new methods to Memoized.
+    - `isExpired`, `isNotComputedYet`, `isComputed`
+
 ## 2.1.0
   - Removed the `to_string_pretty` package from the dependencies.
   - Follows Dart file conventions
