@@ -38,7 +38,7 @@ class Memoized<V> {
   }
 
   /// Marks the cached value as expired, so the next call will trigger a recomputation.
-  void expire() => _status == MemoizedStatus.expired;
+  void expire() => _status = MemoizedStatus.expired;
 
   @override
   String toString() {
