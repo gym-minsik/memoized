@@ -1,4 +1,3 @@
-import 'dart:collection';
 import 'package:quiver/collection.dart';
 
 class Memoized1<V, A1> {
