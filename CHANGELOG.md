@@ -1,3 +1,6 @@
+## 2.2.1
+  - Fix bug in expire() method: set _status to expired instead of comparing
+
 ## 2.2.0
   - Add new methods to Memoized.
     - `isExpired`, `isNotComputedYet`, `isComputed`
