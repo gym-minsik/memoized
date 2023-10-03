@@ -1,5 +1,3 @@
-import 'package:to_string_pretty/to_string_pretty.dart';
-
 /// Represents a memoization wrapper for a computation that returns a value of type [V].
 ///
 /// This class is used to cache and manage the result of a computation so it doesn't
@@ -42,11 +40,11 @@ class Memoized<V> {
       lastComputation = notComputedMessage;
     }
 
-    return toStringPretty(this, {
-      'functionType': '$V Function()',
-      'lastComputation': lastComputation,
-      'expired': '$_expired',
-    });
+    return '$runtimeType {\n'
+        '  functionType: $V Function(),\n'
+        '  lastComputation: $lastComputation,\n'
+        '  expired: $_expired\n'
+        '}';
   }
 }
 

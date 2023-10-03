@@ -1,13 +1,12 @@
 name: memoized
 description: Decorators to cache returned values, it helps in reducing the execution time of the function by using LRU Caching.
-version: 2.0.0
+version: 2.1.0
 repository: https://github.com/sylfreee/memoized
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
-  to_string_pretty: ^1.1.5
   quiver: ^3.2.1
 
 dev_dependencies:
