@@ -1,3 +1,9 @@
+## 2.2.2
+### Adding Notes on `Memoized`:
+- Explain the issue of ineffective caching when creating `Memoized` instances as function variables.
+- Present the correct approach of creating and storing a `Memoized` instance.
+- Provide code examples to illustrate both approaches.
+
 ## 2.2.1
   - Fix bug in expire() method: set _status to expired instead of comparing
 
