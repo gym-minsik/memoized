@@ -1,3 +1,5 @@
+## 2.2.3
+
 ## 2.2.2
 ### Adding Notes on `Memoized`:
 - Explain the issue of ineffective caching when creating `Memoized` instances as function variables.

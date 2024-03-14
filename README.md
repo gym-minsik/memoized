@@ -59,11 +59,12 @@ print(fib(80));
 The following code snippet demonstrates a pitfall to avoid when using Memoized:
 
 ```dart
-class VeryCoolWidget extends StatelessWidget {
+class _VeryCoolWidgetState extends State<VeryCoolWidget> {
+  @override
   Widget build(BuildContext context) {
     final size = Memoized(expensiveCalculation);
 
-    return CoolWidget(size: size);
+    return CoolWidget(size: size());
   }
 }
 ```
@@ -72,16 +73,16 @@ In this pattern, a new `Memoized` instance is created and destroyed with every `
 ### Solution: Use a memoized instance outside the function
 To avoid this issue, consider the following approach:
 
-
 ```dart
-class VeryCoolWidget extends StatelessWidget {
+class _VeryCoolWidgetState extends State<VeryCoolWidget> {
   late final expensiveCalculation = _expensiveCalculationImpl.memo;
 
   Size _expensiveCalculationImpl() {...}
 
+  @override
   Widget build(BuildContext context) {
-    final Size size = expensiveCalculation();
-
+    final size = expensiveCalculation();
+    
     return CoolWidget(size: size);
   }
 }
