@@ -1,3 +1,5 @@
+## 2.2.4
+- fix(example/async): ensure intended delay by correcting Future.delayed() usage.
 ## 2.2.3
 
 ## 2.2.2
