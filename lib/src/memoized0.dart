@@ -34,7 +34,7 @@ class Memoized<V> {
       _memoized = _computation();
       _status = MemoizedStatus.computed;
     }
-    return _memoized!;
+    return _memoized;
   }
 
   /// Marks the cached value as expired, so the next call will trigger a recomputation.

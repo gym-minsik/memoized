@@ -42,5 +42,19 @@ void main() {
       expect(getElaspedTime(() => memoized(shouldUpdate: true)),
           greaterThan(const Duration(milliseconds: 7)));
     });
+
+    test('should work with nullable types.', () {
+      final memoizedNull = Memoized<String?>(() {
+        return null;
+      });
+      final memoizedString = Memoized<String?>(() {
+        return '';
+      });
+
+      expect(memoizedNull(), null);
+      expect(memoizedNull(), null);
+      expect(memoizedString(), '');
+      expect(memoizedString(), '');
+    });
   });
 }
