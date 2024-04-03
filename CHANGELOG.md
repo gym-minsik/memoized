@@ -1,3 +1,6 @@
+## 2.2.5
+- fix: Correct handling of nullable types in `Memoized`.
+
 ## 2.2.4
 - fix(example/async): ensure intended delay by correcting Future.delayed() usage.
 ## 2.2.3
