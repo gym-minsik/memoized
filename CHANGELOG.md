@@ -1,3 +1,6 @@
+## 2.2.6
+- docs: Add README in Korean.
+
 ## 2.2.5
 - fix: Correct handling of nullable types in `Memoized`.
 
