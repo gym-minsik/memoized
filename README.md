@@ -1,8 +1,10 @@
-# Overview
+[**한국어**](README_kr.md)
+
+## Memoized
 
 The memoized package is designed to store the previously computed value of a function so that if the function is called again with the same parameters, the stored value is returned immediately instead of recalculating it.
 
-# Features
+## Features
 **Memoization**: Wraps a function and caches its result.
 
   ``` dart
@@ -54,7 +56,7 @@ print(fib(80));
 
   ```
 
-# Important Notes on the Lifetime of Memoized Instances
+## Important Notes on the Lifetime of Memoized Instances
 ### Beware of creating `Memoized` instances as function variables.
 The following code snippet demonstrates a pitfall to avoid when using Memoized:
 
